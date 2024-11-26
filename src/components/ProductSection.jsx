@@ -41,7 +41,7 @@ export default function Products() {
         <div className='h-1 w-20 bg-black mx-auto'></div>
       </div>
       <div className='w-full h-full grid md:grid-cols-2 grid-cols-1 md:px-5 px-2 place-items-center gap-4 '>
-        <Product src={'/testing.avif'} title={'Galaxy Z '} price={'1999.99$'} desc={"Avail Special discounts with free gifts!"} Sale big/>
+        <Product src={'/bigproduct.avif'} title={'Galaxy Z '} price={'1999.99$'} desc={"Avail Special discounts with free gifts!"} Sale big/>
         <aside className="grid grid-cols-2 gap-4">
           {productData.map((item , index)=>{
             return <Product key={index} {...item}/>
