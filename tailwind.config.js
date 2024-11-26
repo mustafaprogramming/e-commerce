@@ -7,11 +7,18 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        'xxs': '380px',
+        'xs': '480px',
+        'xl': '1200px',
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('daisyui'),
+  ],
 };
