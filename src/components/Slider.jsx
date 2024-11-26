@@ -84,11 +84,11 @@ export default function Slider() {
                 <span className={`absolute text-[12px] overflow-visible whitespace-nowrap hidden group-hover:flex w-full justify-center -translate-y-full ${theme==='dark'?'text-black':'text-white'}`}>
                   {slide.title}
                 </span>
-                <div className={`${index===slideIndex?"sm:w-20 w-16 ":"sm:w-10 w-8 "} 
+                <span className={`${index===slideIndex?"sm:w-20 w-16 ":"sm:w-10 w-8 "} 
                 ${theme==='dark'? 
                 index===slideIndex?'bg-black':'bg-gray-500/50' 
                 :
-                index===slideIndex?'bg-white':'bg-gray-100/50'} rounded-sm h-1 `}></div>
+                index===slideIndex?'bg-white':'bg-gray-100/50'} rounded-sm h-1 flex`}></span>
               </button>
       })}
       </aside>

@@ -55,7 +55,6 @@ export default function Header() {
         <div className={` bg-white border-b flex transition-all duration-500 h-0 overflow-hidden ${searchOpen ? 'h-[170px]' :''} w-full`}>
             <Search />
         </div>
-        
       </nav>
     </>
   )

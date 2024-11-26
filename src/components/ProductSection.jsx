@@ -40,14 +40,14 @@ export default function Products() {
         <h2 className='sm:text-3xl text-2xl text-black/70 font-semibold mb-3'>Our Products</h2>
         <div className='h-1 w-20 bg-black mx-auto'></div>
       </div>
-      <div className='w-full h-full grid md:grid-cols-2 grid-cols-1 md:px-5 px-2 place-items-center gap-4 '>
+      <aside className='w-full h-full grid md:grid-cols-2 grid-cols-1 md:px-5 px-2 place-items-center gap-4 '>
         <Product src={'/bigproduct.avif'} title={'Oyster'} price={'1999.99$'} desc={"Avail Special discounts with free gifts!"} Sale big/>
-        <aside className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-2 gap-4">
           {productData.map((item , index)=>{
             return <Product key={index} {...item}/>
           })}
-        </aside>
-      </div>
+        </div>
+      </aside>
 
     </section>
   )
