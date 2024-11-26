@@ -2,12 +2,12 @@ import Button from './Button'
 
 export default function Subscribe() {
   return (
-    <aside className='bg-white w-full py-16 border-t  border-opacity-50'>
-      <div className='mx-auto  w-full md:max-w-md h-full flex flex-col align-middle justify-center gap-10 text-center px-4'>
+    <aside className='bg-white w-full py-16 border-t border-opacity-50'>
+      <div className='mx-auto  w-full md:max-w-md h-full flex flex-col items-center justify-center gap-10 text-center px-4'>
         <h3 className='text-lg font-semibold uppercase'>
           Subscribe to our Newsletter
         </h3>
-        <div className='grid grid-cols-[65%_35%]'>
+        <div className='w-full grid grid-cols-[65%_35%] md:px-0 px-10'>
           <input
             type='email'
             id='newsletter'
@@ -15,7 +15,7 @@ export default function Subscribe() {
       focus:invalid:border-pink-500 focus:invalid:ring-pink-500'
             placeholder='Email'
           />
-          <Button text='subscribe' dark />
+          <Button text='subscribe' dark full />
         </div>
       </div>
     </aside>

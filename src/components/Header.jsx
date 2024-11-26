@@ -26,10 +26,10 @@ export default function Header() {
               {searchOpen ? <IoCloseSharp  />:<IoSearchOutline />}
             </button>
           </div>
-          <h2 className={`${fugaz.className} lg:text-5xl sm:text-4xl text-3xl place-items-center `}>
+          <div className={`${fugaz.className} lg:text-5xl sm:text-4xl text-3xl place-items-center `}>
             <p className={`${fugaz.className} lg:text-4xl sm:text-3xl text-2xl bg-clip-text text-transparent text-center bg-gradient-to-b from-black to-black/40`}>Crown </p>
             <GiCrown />
-          </h2>
+          </div>
           <div className='flex gap-4 text-[20px] justify-end'>
             <IoHeartOutline className='hover:cursor-pointer hover:opacity-50 transition-all md:inline hidden'/>
             <IoPersonOutline className='hover:cursor-pointer hover:opacity-50 transition-all md:inline hidden'/>  
@@ -40,11 +40,11 @@ export default function Header() {
       </header>
       <nav className=' w-full flex-col items-center md:sticky top-0 z-50'>
         <ul className={` h-0 md:h-fit md:pb-6 md:pt-2 overflow-hidden flex flex-col md:flex-row bg-white gap-4 font-thin items-center  border-b w-full transition-all duration-500 justify-center ${dropDownMenu ? ' h-[200px] ' : '  '}`}>
-          <li><a href="" className="hover:border-red-600 transition-all duration-200 border-b-2 border-transparent">Watches</a></li>
-          <li><a href="" className="hover:border-red-600 transition-all duration-200 border-b-2 border-transparent">Perfumes</a></li>
-          <li><a href="" className="hover:border-red-600 transition-all duration-200 border-b-2 border-transparent">Bags & Accessories
+          <li><a href="" className="hover:border-black transition-all duration-200 border-b-2 border-transparent">Watches</a></li>
+          <li><a href="" className="hover:border-black transition-all duration-200 border-b-2 border-transparent">Perfumes</a></li>
+          <li><a href="" className="hover:border-black transition-all duration-200 border-b-2 border-transparent">Bags & Accessories
           </a></li>
-          <li><a href="" className="hover:border-red-600 transition-all duration-200 border-b-2 border-transparent">Jewelry</a></li>
+          <li><a href="" className="hover:border-black transition-all duration-200 border-b-2 border-transparent">Jewelry</a></li>
           {/* search btn */}
           <li className='md:flex hidden items-center ml-2'>
             <button onClick={()=>{setSearchOpen(!searchOpen)}} className='text-[20px] border-l border-black pl-5 hover:cursor-pointer hover:opacity-50 transition-all'>

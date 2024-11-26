@@ -61,9 +61,9 @@ export default function Slider() {
     }
   },[slideIndex])
   return (
-    <section className="lg:h-screen md:h-[90vh] xs:h-[80vh] h-[60vh] w-full bg-pink-500 relative flex justify-center items-center mb-10">
-      <article className={`bg-yellow-900 w-full h-full absolute  ${theme==='dark'?"text-black":'text-white'} `}>
-        <Image src={image} alt="" width={1000} height={600} className="w-full h-full transition-all duration-300 bg-no-repeat bg-center bg-contain min-w-[600px] overflow-hidden absolute top-0 right-0"/>
+    <section className="lg:h-screen md:h-[90vh] xs:h-[80vh] h-[60vh] w-full relative flex justify-center items-center mb-10">
+      <article className={`w-full h-full absolute  ${theme==='dark'?"text-black":'text-white'} `}>
+        <Image src={image} quality={100} alt="" width={1000} height={700} className="w-full h-full transition-all duration-300 bg-no-repeat bg-center bg-contain min-w-[600px] overflow-hidden absolute top-0 right-0"/>
         {readMore&&<div className="absolute w-full h-full md:hidden flex backdrop-blur-sm bg-black/10"></div>}
         <div className=" flex flex-col gap-0.5 absolute left-[10%] md:bottom-[50%] md:translate-y-1/2 bottom-[20%] mr-10">
           <h1 className="lg:text-4xl sm:text-3xl text-2xl font-bold lg:mb-4">{title}</h1>
@@ -81,7 +81,7 @@ export default function Slider() {
       <aside className="absolute md:w-[50%] w-full bottom-6 left-2/4 -translate-x-2/4 flex justify-center items-center gap-4">
       {sliderData.map((slide,index)=>{
         return <button onClick={()=>setSlideIndex(index)} key={index} className="group relative ">
-                <span className={`absolute text-[10px] overflow-visible whitespace-nowrap hidden group-hover:flex w-full justify-center -translate-y-full ${theme==='dark'?'text-black':'text-white'}`}>
+                <span className={`absolute text-[12px] overflow-visible whitespace-nowrap hidden group-hover:flex w-full justify-center -translate-y-full ${theme==='dark'?'text-black':'text-white'}`}>
                   {slide.title}
                 </span>
                 <div className={`${index===slideIndex?"sm:w-20 w-16 ":"sm:w-10 w-8 "} 
