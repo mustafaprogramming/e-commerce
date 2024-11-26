@@ -1,5 +1,5 @@
 import Image from "next/image"
-import Button from "./button"
+import Button from "./Button"
 import { SlHeart } from "react-icons/sl";
 
 export default function Product({src,title,desc,price,big,New,Sale}){

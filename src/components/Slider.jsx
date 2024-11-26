@@ -2,7 +2,7 @@
 import { IoIosArrowForward , IoIosArrowBack} from "react-icons/io";
 
 import { useEffect, useState } from "react"
-import Button from "./button"
+import Button from "./Button"
 import Image from "next/image";
 
 const sliderData=[
