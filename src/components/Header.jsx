@@ -38,7 +38,7 @@ export default function Header() {
           </div>
         </section>
       </header>
-      <nav className=' w-full flex-col items-center sticky top-0 z-50'>
+      <nav className=' w-full flex-col items-center md:sticky top-0 z-50'>
         <ul className={` h-0 md:h-fit md:pb-6 md:pt-2 overflow-hidden flex flex-col md:flex-row bg-white gap-4 font-thin items-center  border-b w-full transition-all duration-500 justify-center ${dropDownMenu ? ' h-[200px] ' : '  '}`}>
           <li><a href="" className="hover:border-red-600 transition-all duration-200 border-b-2 border-transparent">Watches</a></li>
           <li><a href="" className="hover:border-red-600 transition-all duration-200 border-b-2 border-transparent">Perfumes</a></li>
