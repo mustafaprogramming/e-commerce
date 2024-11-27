@@ -21,7 +21,7 @@ export default function Header() {
             <li><a href="" className='link-underline'>services</a></li>
           </ul>
           <div className='md:hidden flex gap-4 text-[20px]'>
-            <button onClick={()=>{setDropDownMenu(!dropDownMenu);setSearchOpen(false)}}><CiMenuBurger className=''/></button>
+            <button onClick={()=>{setDropDownMenu(!dropDownMenu);setSearchOpen(false)}}>{dropDownMenu ? <IoCloseSharp  />:<CiMenuBurger />}</button>
             <button onClick={()=>{setSearchOpen(!searchOpen);setDropDownMenu(false)}} className='text-[20px] hover:cursor-pointer hover:opacity-50 transition-all'>
               {searchOpen ? <IoCloseSharp  />:<IoSearchOutline />}
             </button>

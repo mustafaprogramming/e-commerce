@@ -61,7 +61,7 @@ export default function Slider() {
     }
   },[slideIndex])
   return (
-    <section className="lg:h-screen md:h-[90vh] xs:h-[80vh] h-[60vh] w-full relative flex justify-center items-center mb-10">
+    <section className="lg:h-screen md:h-[90vh] xs:h-[70vh] h-[50vh] w-full relative flex justify-center items-center mb-10">
       <article className={`w-full h-full absolute  ${theme==='dark'?"text-black":'text-white'} `}>
         <Image src={image} quality={100} alt="" width={1000} height={700} className="w-full h-full transition-all duration-300 bg-no-repeat bg-center bg-contain min-w-[600px] overflow-hidden absolute top-0 right-0"/>
         {readMore&&<div className="absolute w-full h-full md:hidden flex backdrop-blur-sm bg-black/10"></div>}
