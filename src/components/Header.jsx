@@ -27,7 +27,7 @@ export default function Header() {
             </button>
           </div>
           <div className={`${fugaz.className} lg:text-5xl sm:text-4xl text-3xl place-items-center `}>
-            <p className={`${fugaz.className} lg:text-4xl sm:text-3xl text-2xl bg-clip-text text-transparent text-center bg-gradient-to-b from-black to-black/40`}>Crown </p>
+            <p className={`${fugaz.className} lg:text-4xl sm:text-3xl text-2xl text-black text-center `}>Crown </p>
             <GiCrown />
           </div>
           <div className='flex gap-4 text-[20px] justify-end'>
