@@ -7,7 +7,7 @@ import { useState } from "react";
 export default function Product({src,title,desc,price,big,New,Sale}){
   const [favorite,setFavorite]=useState(false)
   return (
-    <article className={`sm:hover:border-opacity-100 relative self-start
+    <article className={`sm:hover:border-opacity-100 relative
     sm:border-opacity-0 border border-black transition-all duration-500 group p-5 ${big ? 'md:max-w-[500px] max-w-[400px]' :'md:max-w-[300px] max-w-[200px] '}`}>
     {Sale && <span className="absolute left-0 z-10 top-4 bg-black px-5 text-white">Sale</span>}
     {New &&<span className={` absolute left-0 z-10 bg-black px-5 text-white ${Sale ? 'top-11 px-2' : 'top-4'} `}>New</span>}

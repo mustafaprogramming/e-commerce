@@ -1,3 +1,5 @@
+'use client'
+import { useEffect } from "react";
 import { GoPackage , GoPackageDependencies } from "react-icons/go";
 import BannerImage from "@/components/BannerImage";
 import ProductSection from "@/components/ProductSection";
@@ -27,6 +29,21 @@ const BannerImages=[
   },
 ]
 export default function Home() {
+  useEffect(() => {
+    const elements = document.querySelectorAll('.show-on-scroll');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.remove('opacity-0', 'translate-y-16');
+        }
+      });
+    });
+
+    elements.forEach((element) =>observer.observe(element));
+
+    return () => observer.disconnect();
+  }, []);
   return (
     <Main>
       <Slider />
@@ -36,7 +53,7 @@ export default function Home() {
         return <BannerImage key={index} {...item} gap/>
       })}
       <Reviews />
-      <aside className="flex md:flex-row flex-col bg-gray-100 my-5 gap-14 py-10 px-24 justify-between">
+      <aside className="show-on-scroll translate-y-16 opacity-0 transition-all duration-[1700ms] flex md:flex-row flex-col bg-gray-100 my-5 gap-14 py-10 px-24 justify-between">
         <div className="place-items-center grid gap-5">
           <GoPackage  className="text-5xl"/>
           <a href="" className="link-underline uppercase sm:text-lg text-base text-center ">complementary delivery</a>
