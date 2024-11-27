@@ -26,7 +26,7 @@ export default function Header() {
               {searchOpen ? <IoCloseSharp  />:<IoSearchOutline />}
             </button>
           </div>
-          <div className={`${fugaz.className} lg:text-5xl sm:text-4xl text-3xl place-items-center `}>
+          <div className={`${fugaz.className} lg:text-5xl sm:text-4xl text-3xl justify-center items-center flex flex-row sm:flex-col sm:gap-2 gap-0`}>
             <p className={`${fugaz.className} lg:text-4xl sm:text-3xl text-2xl text-black text-center `}>Crown </p>
             <GiCrown />
           </div>
